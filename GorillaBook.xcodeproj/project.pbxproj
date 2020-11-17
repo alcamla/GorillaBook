@@ -18,6 +18,7 @@
 		3473CDC725634E33008B507D /* FeedEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3473CDC625634E33008B507D /* FeedEntry.swift */; };
 		3473CDCC25635608008B507D /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3473CDCB25635608008B507D /* FeedTableViewCell.swift */; };
 		3473CDD12563D47C008B507D /* CreatePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3473CDD02563D47C008B507D /* CreatePostViewController.swift */; };
+		3473CDDA2563EECF008B507D /* GetFeedEntries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3473CDD92563EECF008B507D /* GetFeedEntries.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		3473CDC625634E33008B507D /* FeedEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedEntry.swift; sourceTree = "<group>"; };
 		3473CDCB25635608008B507D /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		3473CDD02563D47C008B507D /* CreatePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostViewController.swift; sourceTree = "<group>"; };
+		3473CDD92563EECF008B507D /* GetFeedEntries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetFeedEntries.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,11 +107,11 @@
 		3473CD9225634B49008B507D /* GorillaBook */ = {
 			isa = PBXGroup;
 			children = (
+				3473CDD82563EEAC008B507D /* UseCases */,
+				3473CDD72563EE9B008B507D /* Scenes */,
 				3473CD9325634B49008B507D /* AppDelegate.swift */,
 				3473CD9525634B49008B507D /* SceneDelegate.swift */,
-				3473CD9725634B49008B507D /* ViewController.swift */,
 				3473CD9925634B49008B507D /* Main.storyboard */,
-				3473CDD02563D47C008B507D /* CreatePostViewController.swift */,
 				3473CD9C25634B4F008B507D /* Assets.xcassets */,
 				3473CD9E25634B4F008B507D /* LaunchScreen.storyboard */,
 				3473CDA125634B4F008B507D /* Info.plist */,
@@ -135,6 +137,39 @@
 				3473CDB725634B4F008B507D /* Info.plist */,
 			);
 			path = GorillaBookUITests;
+			sourceTree = "<group>";
+		};
+		3473CDD52563EE60008B507D /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				3473CD9725634B49008B507D /* ViewController.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		3473CDD62563EE6E008B507D /* CreateEntry */ = {
+			isa = PBXGroup;
+			children = (
+				3473CDD02563D47C008B507D /* CreatePostViewController.swift */,
+			);
+			path = CreateEntry;
+			sourceTree = "<group>";
+		};
+		3473CDD72563EE9B008B507D /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				3473CDD52563EE60008B507D /* Feed */,
+				3473CDD62563EE6E008B507D /* CreateEntry */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		3473CDD82563EEAC008B507D /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				3473CDD92563EECF008B507D /* GetFeedEntries.swift */,
+			);
+			path = UseCases;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +306,7 @@
 				3473CD9825634B49008B507D /* ViewController.swift in Sources */,
 				3473CD9425634B49008B507D /* AppDelegate.swift in Sources */,
 				3473CD9625634B49008B507D /* SceneDelegate.swift in Sources */,
+				3473CDDA2563EECF008B507D /* GetFeedEntries.swift in Sources */,
 				3473CDD12563D47C008B507D /* CreatePostViewController.swift in Sources */,
 				3473CDCC25635608008B507D /* FeedTableViewCell.swift in Sources */,
 			);

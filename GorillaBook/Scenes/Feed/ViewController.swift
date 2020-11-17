@@ -38,10 +38,11 @@ class ViewController: UIViewController, CreateEntryDelegate{
     
     @IBAction func createPostTapped(_ sender: Any) {
         let vc = storyboard?.instantiateViewController(identifier: "CreatePostViewController") as! CreatePostViewController
+        vc.delegate = self
         self.navigationController?.pushViewController(vc, animated: true)
     }
     func didCreate(_ feedEntry: FeedEntry?) {
-        print("Did Create entry!")
+        viewModel.appendEntry(feedEntry)
     }
 }
 
@@ -127,6 +128,11 @@ final class FeedViewModel {
         state.todaysLabel = FeedViewModel.getToday()
     }
     
+    func appendEntry(_ feedEntry: FeedEntry?) {
+        guard let newEntry = feedEntry else { return }
+        self.feedEntries.insert(newEntry, at: 0)
+    }
+    
     private static func getToday() -> String {
         let date = Date()
         let dateFormatter = DateFormatter()
@@ -141,19 +147,10 @@ final class FeedViewModel {
         getFeedEntries.execute { (result) in
             if case let .success(entries) =  result {
                 self.feedEntries = entries
-                entries.forEach { (feedEntry) in
-                    self.newFeedEntries[feedEntry.id] = feedEntry
-                }
-                
             }
         }
     }
     
-    private var newFeedEntries: [Int: FeedEntry] = [:] {
-        didSet {
-            print("did set!")
-        }
-    }
     
     private var feedEntries: [FeedEntry] = [] {
         didSet {
@@ -162,7 +159,6 @@ final class FeedViewModel {
             self.state.displayedEntries = viewModels
         }
     }
-    
     
     private func loadImage(for feedEntry: FeedEntry) {
         
@@ -186,36 +182,4 @@ final class FeedViewModel {
         }
     }
 }
-
-
-
-
-protocol GetFeedEntries {
-    func execute(completion: @escaping (Result<[FeedEntry],Error>) -> Void)
-}
-
-final class GetFeedEntriesAdapter: GetFeedEntries {
-    func execute(completion: @escaping (Result<[FeedEntry],Error>) -> Void) {
-        
-        guard let url =  URL(string: "https://gl-endpoint.herokuapp.com/feed") else {
-            print("Invalid URL")
-            return
-        }
-        let request = URLRequest(url: url)
-        
-        
-        URLSession.shared.dataTask(with: request) { (data, response, error) in
-            if let data = data, let feedEntries = try? JSONDecoder().decode([FeedEntry].self, from: data) {
-                DispatchQueue.main.async {
-                    completion(.success(feedEntries))
-                }
-            }
-            else {
-                completion(.failure(NSError(domain: "", code: 0, userInfo: nil)))
-            }
-            
-        }.resume()
-    }
-}
-
 

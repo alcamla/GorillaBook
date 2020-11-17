@@ -21,12 +21,13 @@ final class CreatePostViewController: UIViewController {
             characterCountLabel.text = viewModel.state.characterCountText
         }
         entryTextView.becomeFirstResponder()
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Share", style: .plain, target: self, action: #selector(shareTapped))
     }
-    
-    override func viewWillDisappear(_ animated: Bool) {
+        
+    @objc func  shareTapped() {
         self.delegate?.didCreate(viewModel.state.newFeedEntry)
+        self.navigationController?.popViewController(animated:true)
     }
-    
 }
 
 extension CreatePostViewController: UITextViewDelegate {
@@ -63,6 +64,7 @@ final class CreatePostViewModel {
                 state.limitReached = true
             }
             state.characterCountText = "\(count)/150"
+            updateFeedEntry(with: entryText)
         }
     }
     
@@ -70,6 +72,12 @@ final class CreatePostViewModel {
     
     init(callback: @escaping () -> Void) {
         self.callback = callback
+    }
+    
+    private func updateFeedEntry(with text: String) {
+        var feedEntry = state.newFeedEntry ?? FeedEntry(id: UUID().hashValue, firstName: "Alejandro", lastName: "Camacho", body: text, timestamp: String(Date().timeIntervalSince1970), image: nil)
+        feedEntry.body = text
+        state.newFeedEntry = feedEntry
     }
     
     func entryTextChanged(string:String) {
