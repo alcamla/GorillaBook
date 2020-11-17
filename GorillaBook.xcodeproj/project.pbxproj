@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3473CD9425634B49008B507D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3473CD9325634B49008B507D /* AppDelegate.swift */; };
+		3473CD9625634B49008B507D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3473CD9525634B49008B507D /* SceneDelegate.swift */; };
+		3473CD9825634B49008B507D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3473CD9725634B49008B507D /* ViewController.swift */; };
+		3473CD9B25634B49008B507D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3473CD9925634B49008B507D /* Main.storyboard */; };
+		3473CD9D25634B4F008B507D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3473CD9C25634B4F008B507D /* Assets.xcassets */; };
+		3473CDA025634B4F008B507D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3473CD9E25634B4F008B507D /* LaunchScreen.storyboard */; };
+		3473CDAB25634B4F008B507D /* GorillaBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3473CDAA25634B4F008B507D /* GorillaBookTests.swift */; };
+		3473CDB625634B4F008B507D /* GorillaBookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3473CDB525634B4F008B507D /* GorillaBookUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3473CDA725634B4F008B507D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3473CD8825634B49008B507D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3473CD8F25634B49008B507D;
+			remoteInfo = GorillaBook;
+		};
+		3473CDB225634B4F008B507D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3473CD8825634B49008B507D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3473CD8F25634B49008B507D;
+			remoteInfo = GorillaBook;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3473CD9025634B49008B507D /* GorillaBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GorillaBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3473CD9325634B49008B507D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3473CD9525634B49008B507D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3473CD9725634B49008B507D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3473CD9A25634B49008B507D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3473CD9C25634B4F008B507D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3473CD9F25634B4F008B507D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3473CDA125634B4F008B507D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3473CDA625634B4F008B507D /* GorillaBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GorillaBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3473CDAA25634B4F008B507D /* GorillaBookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GorillaBookTests.swift; sourceTree = "<group>"; };
+		3473CDAC25634B4F008B507D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3473CDB125634B4F008B507D /* GorillaBookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GorillaBookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3473CDB525634B4F008B507D /* GorillaBookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GorillaBookUITests.swift; sourceTree = "<group>"; };
+		3473CDB725634B4F008B507D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3473CD8D25634B49008B507D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3473CDA325634B4F008B507D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3473CDAE25634B4F008B507D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3473CD8725634B49008B507D = {
+			isa = PBXGroup;
+			children = (
+				3473CD9225634B49008B507D /* GorillaBook */,
+				3473CDA925634B4F008B507D /* GorillaBookTests */,
+				3473CDB425634B4F008B507D /* GorillaBookUITests */,
+				3473CD9125634B49008B507D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3473CD9125634B49008B507D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3473CD9025634B49008B507D /* GorillaBook.app */,
+				3473CDA625634B4F008B507D /* GorillaBookTests.xctest */,
+				3473CDB125634B4F008B507D /* GorillaBookUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3473CD9225634B49008B507D /* GorillaBook */ = {
+			isa = PBXGroup;
+			children = (
+				3473CD9325634B49008B507D /* AppDelegate.swift */,
+				3473CD9525634B49008B507D /* SceneDelegate.swift */,
+				3473CD9725634B49008B507D /* ViewController.swift */,
+				3473CD9925634B49008B507D /* Main.storyboard */,
+				3473CD9C25634B4F008B507D /* Assets.xcassets */,
+				3473CD9E25634B4F008B507D /* LaunchScreen.storyboard */,
+				3473CDA125634B4F008B507D /* Info.plist */,
+			);
+			path = GorillaBook;
+			sourceTree = "<group>";
+		};
+		3473CDA925634B4F008B507D /* GorillaBookTests */ = {
+			isa = PBXGroup;
+			children = (
+				3473CDAA25634B4F008B507D /* GorillaBookTests.swift */,
+				3473CDAC25634B4F008B507D /* Info.plist */,
+			);
+			path = GorillaBookTests;
+			sourceTree = "<group>";
+		};
+		3473CDB425634B4F008B507D /* GorillaBookUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3473CDB525634B4F008B507D /* GorillaBookUITests.swift */,
+				3473CDB725634B4F008B507D /* Info.plist */,
+			);
+			path = GorillaBookUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3473CD8F25634B49008B507D /* GorillaBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3473CDBA25634B4F008B507D /* Build configuration list for PBXNativeTarget "GorillaBook" */;
+			buildPhases = (
+				3473CD8C25634B49008B507D /* Sources */,
+				3473CD8D25634B49008B507D /* Frameworks */,
+				3473CD8E25634B49008B507D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GorillaBook;
+			productName = GorillaBook;
+			productReference = 3473CD9025634B49008B507D /* GorillaBook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3473CDA525634B4F008B507D /* GorillaBookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3473CDBD25634B4F008B507D /* Build configuration list for PBXNativeTarget "GorillaBookTests" */;
+			buildPhases = (
+				3473CDA225634B4F008B507D /* Sources */,
+				3473CDA325634B4F008B507D /* Frameworks */,
+				3473CDA425634B4F008B507D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3473CDA825634B4F008B507D /* PBXTargetDependency */,
+			);
+			name = GorillaBookTests;
+			productName = GorillaBookTests;
+			productReference = 3473CDA625634B4F008B507D /* GorillaBookTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3473CDB025634B4F008B507D /* GorillaBookUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3473CDC025634B4F008B507D /* Build configuration list for PBXNativeTarget "GorillaBookUITests" */;
+			buildPhases = (
+				3473CDAD25634B4F008B507D /* Sources */,
+				3473CDAE25634B4F008B507D /* Frameworks */,
+				3473CDAF25634B4F008B507D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3473CDB325634B4F008B507D /* PBXTargetDependency */,
+			);
+			name = GorillaBookUITests;
+			productName = GorillaBookUITests;
+			productReference = 3473CDB125634B4F008B507D /* GorillaBookUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3473CD8825634B49008B507D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					3473CD8F25634B49008B507D = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					3473CDA525634B4F008B507D = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 3473CD8F25634B49008B507D;
+					};
+					3473CDB025634B4F008B507D = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 3473CD8F25634B49008B507D;
+					};
+				};
+			};
+			buildConfigurationList = 3473CD8B25634B49008B507D /* Build configuration list for PBXProject "GorillaBook" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3473CD8725634B49008B507D;
+			productRefGroup = 3473CD9125634B49008B507D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3473CD8F25634B49008B507D /* GorillaBook */,
+				3473CDA525634B4F008B507D /* GorillaBookTests */,
+				3473CDB025634B4F008B507D /* GorillaBookUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3473CD8E25634B49008B507D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3473CDA025634B4F008B507D /* LaunchScreen.storyboard in Resources */,
+				3473CD9D25634B4F008B507D /* Assets.xcassets in Resources */,
+				3473CD9B25634B49008B507D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3473CDA425634B4F008B507D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3473CDAF25634B4F008B507D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3473CD8C25634B49008B507D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3473CD9825634B49008B507D /* ViewController.swift in Sources */,
+				3473CD9425634B49008B507D /* AppDelegate.swift in Sources */,
+				3473CD9625634B49008B507D /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3473CDA225634B4F008B507D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3473CDAB25634B4F008B507D /* GorillaBookTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3473CDAD25634B4F008B507D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3473CDB625634B4F008B507D /* GorillaBookUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3473CDA825634B4F008B507D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3473CD8F25634B49008B507D /* GorillaBook */;
+			targetProxy = 3473CDA725634B4F008B507D /* PBXContainerItemProxy */;
+		};
+		3473CDB325634B4F008B507D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3473CD8F25634B49008B507D /* GorillaBook */;
+			targetProxy = 3473CDB225634B4F008B507D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3473CD9925634B49008B507D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3473CD9A25634B49008B507D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3473CD9E25634B4F008B507D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3473CD9F25634B4F008B507D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3473CDB825634B4F008B507D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3473CDB925634B4F008B507D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3473CDBB25634B4F008B507D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VC3Z9LLC43;
+				INFOPLIST_FILE = GorillaBook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = camacholaverde.GorillaBook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3473CDBC25634B4F008B507D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VC3Z9LLC43;
+				INFOPLIST_FILE = GorillaBook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = camacholaverde.GorillaBook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3473CDBE25634B4F008B507D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VC3Z9LLC43;
+				INFOPLIST_FILE = GorillaBookTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = camacholaverde.GorillaBookTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GorillaBook.app/GorillaBook";
+			};
+			name = Debug;
+		};
+		3473CDBF25634B4F008B507D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VC3Z9LLC43;
+				INFOPLIST_FILE = GorillaBookTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = camacholaverde.GorillaBookTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GorillaBook.app/GorillaBook";
+			};
+			name = Release;
+		};
+		3473CDC125634B4F008B507D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VC3Z9LLC43;
+				INFOPLIST_FILE = GorillaBookUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = camacholaverde.GorillaBookUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GorillaBook;
+			};
+			name = Debug;
+		};
+		3473CDC225634B4F008B507D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VC3Z9LLC43;
+				INFOPLIST_FILE = GorillaBookUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = camacholaverde.GorillaBookUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GorillaBook;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3473CD8B25634B49008B507D /* Build configuration list for PBXProject "GorillaBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3473CDB825634B4F008B507D /* Debug */,
+				3473CDB925634B4F008B507D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3473CDBA25634B4F008B507D /* Build configuration list for PBXNativeTarget "GorillaBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3473CDBB25634B4F008B507D /* Debug */,
+				3473CDBC25634B4F008B507D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3473CDBD25634B4F008B507D /* Build configuration list for PBXNativeTarget "GorillaBookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3473CDBE25634B4F008B507D /* Debug */,
+				3473CDBF25634B4F008B507D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3473CDC025634B4F008B507D /* Build configuration list for PBXNativeTarget "GorillaBookUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3473CDC125634B4F008B507D /* Debug */,
+				3473CDC225634B4F008B507D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3473CD8825634B49008B507D /* Project object */;
+}
