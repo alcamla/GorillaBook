@@ -15,6 +15,8 @@
 		3473CDA025634B4F008B507D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3473CD9E25634B4F008B507D /* LaunchScreen.storyboard */; };
 		3473CDAB25634B4F008B507D /* GorillaBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3473CDAA25634B4F008B507D /* GorillaBookTests.swift */; };
 		3473CDB625634B4F008B507D /* GorillaBookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3473CDB525634B4F008B507D /* GorillaBookUITests.swift */; };
+		3473CDC725634E33008B507D /* FeedEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3473CDC625634E33008B507D /* FeedEntry.swift */; };
+		3473CDCC25635608008B507D /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3473CDCB25635608008B507D /* FeedTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		3473CDB125634B4F008B507D /* GorillaBookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GorillaBookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3473CDB525634B4F008B507D /* GorillaBookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GorillaBookUITests.swift; sourceTree = "<group>"; };
 		3473CDB725634B4F008B507D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3473CDC625634E33008B507D /* FeedEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedEntry.swift; sourceTree = "<group>"; };
+		3473CDCB25635608008B507D /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				3473CD9C25634B4F008B507D /* Assets.xcassets */,
 				3473CD9E25634B4F008B507D /* LaunchScreen.storyboard */,
 				3473CDA125634B4F008B507D /* Info.plist */,
+				3473CDC625634E33008B507D /* FeedEntry.swift */,
+				3473CDCB25635608008B507D /* FeedTableViewCell.swift */,
 			);
 			path = GorillaBook;
 			sourceTree = "<group>";
@@ -258,9 +264,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3473CDC725634E33008B507D /* FeedEntry.swift in Sources */,
 				3473CD9825634B49008B507D /* ViewController.swift in Sources */,
 				3473CD9425634B49008B507D /* AppDelegate.swift in Sources */,
 				3473CD9625634B49008B507D /* SceneDelegate.swift in Sources */,
+				3473CDCC25635608008B507D /* FeedTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
